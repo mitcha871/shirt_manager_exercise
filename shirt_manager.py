@@ -9,7 +9,7 @@ class OrderData():
         self.text = text
 
 def clr_scrn():
-    os.system("clear")
+    os.system("cls" if os.name == "nt" else "clear")
 
 def display_orders(order_list):
     print("We have these orders in the system:\n")
